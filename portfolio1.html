@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="Portfolio of Muhammad Atheeq B – Mechanical Engineering student with hands‑on projects, CAD/SolidWorks, product development."/>
+	<meta name="author" content="Muhammad Atheeq B"/>
+	<title>Muhammad Atheeq B – Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<style>
+	.faded-line{
+			height:2px;
+			width:60%;
+			margin:40px auto;
+			background: linear-gradient(
+			to right,
+			transparent,
+			black,
+			transparent);
+		
+		}
+	:target {
+		scroll-margin-top: 80px; /* adjust based on your navbar height */
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+	body, html {
+		margin: 0;
+		padding: 0;
+		font-family: "Montserrat", sans-serif;
+		scroll-behavior: smooth;
+	}
+	
+	.nav-bar {
+		position: sticky;
+		top: 0;
+		width:100%;
+		z-index: 50;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 40px;
+		background-color: #fff;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	}
+	.nav-bar img {
+		width: 50px;
+		border: 2px solid #0f0f0f;
+		border-radius: 50%;
+	}
+	.nav-bar .logo {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	.nav-links a {
+		font-size: 18px;
+		color: #0f0f0f;
+		padding: 0 15px;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	
+	.nav-links a:hover {
+		text-decoration: underline;
+	}
+
+	.home {
+		background: linear-gradient(to bottom, #dcdcde, #ffffff);
+		min-height: 100vh;           /* full screen */
+		display: flex;
+		align-items: center;          /* vertical centering */
+		justify-content: flex-start;  /* left-align content */
+		padding: 0 60px;              /* left/right padding */
+		text-align: left;
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;                    /* space between elements (paragraph & button) */
+		max-width: 700px;  
+		margin-top: -150px;	
+		}
+	
+	.scroll img{
+		width:30px;
+	
+	}
+
+	.name {
+		font-family: "Bebas Neue", sans-serif;
+		font-size: clamp(60px, 8vw, 140px);  /* responsive size */
+		margin-top: 0;
+		line-height: 1.1;
+	}
+
+	.name p {
+		font-family: "Montserrat", sans-serif;
+		font-size: clamp(16px, 2vw, 24px);
+		margin: 0;
+		color: #0f0f0f;
+	}
+
+	/* Button styling */
+	.home button {
+		padding: 12px 30px;
+		font-size: 24px;
+		font-weight: 500;
+		border: none;
+		border-radius: 8px;
+		background-color: #000;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		align-self: flex-start; /* left align button */
+	}
+	.home button:hover {
+		background-color: #1a1919;
+	}
+
+	.get-to-know {
+		
+		margin-top: 20px;
+		font-weight: 500;
+		color: #000;
+		cursor: pointer;
+		text-decoration: underline;
+		max-width: 700px;
+	}
+	.about{
+		font-family:Montserrat;
+		font-size:20px;
+		padding:60px;
+		margin-top:-100px;
+		font-weight:500;
+	}
+	.headings{
+		font-family:Bebas Neue;
+		font-weight:600;
+		font-size:40px;
+		
+	}
+	.facts{
+		display:flex;
+		flex-direction:column;
+		gap:10px;
+	}
+	.facts-item{
+		display:flex;
+		align-items:center;
+		gap:10px;
+	}
+	.facts img{
+		width:28px;
+		height:28px;
+	}
+	.education{
+		font-family:Montserrat;
+		font-size:20px;
+		padding:60px;
+		margin-top:-100px;
+		font-weight:500;
+	}
+	.projects{
+		background-color:#ffffff;
+		font-family:Montserrat;
+		align-items:center;
+		font-size:20px;
+		padding:60px;
+		padding-right:30px;
+		font-weight:500;
+	}	
+	.projects img{
+		
+		width:600px;
+		border:2px solid #000;
+		border-radius:20px;
+		flex-shrink:0;
+	}
+	.projectone{
+		display:flex;
+		align-items:top;
+		margin-top:60px;
+	}
+	.projects p{
+		
+		margin-left:30px;
+	}
+	.projectone {
+		background-image: url("images/gear.svg");
+		background-size: 200px;      /* make it fill the box */
+		background-repeat: no-repeat;
+		background-position: right;
+		padding: 20px;               /* so text doesn’t touch edges */
+		border-radius: 12px;         /* optional rounded corners */
+	}
+	.projectwo{
+		display:flex;
+		align-items:top;
+		margin-top:60px;
+	}
+	.projectwo {
+		background-image: url("images/prec.svg");
+		background-size: 200px;      /* make it fill the box */
+		background-repeat: no-repeat;
+		background-position: right;
+		padding: 20px;               /* so text doesn’t touch edges */
+		border-radius: 12px;         /* optional rounded corners */
+	}
+	
+
+
+	
+	</style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+	<header class="nav-bar">
+		<div class="logo">
+			<img src="images/atheeq.png" alt="profile picture">
+			<span>Muhammad Atheeq B</span>
+		</div>
+		<nav class="nav-links">
+			<a href="#about">About</a>
+			<a href="#education">Education</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+  <!-- HOME SECTION -->
+	<section class="home" >
+		<div class="text-container">
+			<div class="name" >
+				Hey, I'm Atheeq.
+				<p>Driven <b>Mechanical Engineering student</b> with hands-on project experience.</p>
+			</div>
+			<button>Projects</button>
+			
+			<div class="scroll"><img src="images/scroll.png" alt="scroll"></div>
+		</div>
+	</section>
+	<section class="about" id="about" >
+		<div class="headings" >Get to Know Me</div>
+		<div><p>Hey! It's Muhammad Atheeq B.
+				a mechanical engineering student with hands-on project experience,
+				eager to apply practical skills and creativity to solve real world problems
+				I am also an active member of my college club, SJEC Racing, where I work on offroad ATVs.<br><br>
+
+				In the past few years, I completed a SolidWorks course on Udemy and participated in several hackathons, winning first place in the Prosolve Show competition at Christ (Deemed to be University), Bangalore, for our creative problem-solving and technical pitch.</p>
+				<br>
+				<div class="facts">
+					<div class="facts-item"><img src="images/location.svg" alt="location icon"><span>India</span></div>
+					<div class="facts-item"><img src="images/mechanic.svg" alt="engineer icon"><span>Mechanical Engineer</span></div>
+					<div class="facts-item"><img src="images/3d.svg" alt="engineer icon"><span>freelancing in 3D modeling</span></div>
+					<div class="faded-line"></div>
+				</div>
+				
+		</div>
+	</section>
+	<section class="education" id="education">
+		<div class="headings">Education</div>
+		<p><b>Bachelor of Engineering, Mechanical Engineering	(2024-2027)</b></p>
+		<P>St Joseph Engineering College</p>
+		<br>
+		<p><b>Diploma, Mechanical Engineering	(2021-2024)</b></p>
+		<p>Karnataka (Govt.) Polytechnic</p>
+		<p>CGPA: 8.00/10</p>
+	</section>
+	<div class="faded-line"></div>
+	<section class="projects" id="projects">
+		<div class="headings">Projects</div>
+		
+		<div class="projectone">
+		
+			<img src="images/poje.png" alt="first project">
+			<div><p><b><ins>Optimization of Roll Cage under Real-World Loads</b>
+			<br><br></ins>
+			Worked on optimizing a sustainable roll cage design by testing its performance under real load conditions.<br><br>
+			Focused on improving safety and strength while exploring eco-friendly materials for a greener build</p>
+			</div>
+		</div>
+		<div class="projectwo">
+			<img src="images/rocket.png">
+		</div>
+		
+		
+			
+			
+		
+	</section>
+	
+	
+</body>
+</html>
