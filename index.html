@@ -1,4 +1,4 @@
--﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8"/>
@@ -176,6 +176,24 @@
 		margin-top:-100px;
 		font-weight:500;
 	}
+	.internships{
+		background-color:#ffffff;
+		font-family:Montserrat;
+		align-items:center;
+		font-size:20px;
+		padding:60px;
+		padding-right:30px;
+		font-weight:500;
+		}
+	.internship{
+		display:flex;
+		align-items:top;
+		margin-top:60px;
+	}
+	.internship p{
+		
+		margin-left:30px;
+	}		
 	.projects{
 		background-color:#ffffff;
 		font-family:Montserrat;
@@ -192,7 +210,7 @@
 		border-radius:20px;
 		flex-shrink:0;
 	}
-	.projectone{
+	.project{
 		display:flex;
 		align-items:top;
 		margin-top:60px;
@@ -201,41 +219,8 @@
 		
 		margin-left:30px;
 	}
-	.projectone {
-		background-image: url("images/gear.svg");
-		background-size: 200px;      /* make it fill the box */
-		background-repeat: no-repeat;
-		background-position: right;
-		padding: 20px;               /* so text doesn’t touch edges */
-		border-radius: 12px;         /* optional rounded corners */
-	}
-	.projectwo{
-		display:flex;
-		align-items:top;
-		margin-top:60px;
-	}
-      /* optional rounded corners */
-	}
-	.projecthree{
-		display:flex;
-		align-items:top;
-		margin-top:60px;
-	}
-	.projectfour{
-		display:flex;
-		align-items:top;
-		margin-top:60px;
-	}
-	.projectfive{
-		display:flex;
-		align-items:top;
-		margin-top:60px;
-	}
-	.projectsix{
-		display:flex;
-		align-items:top;
-		margin-top:60px;
-	}
+
+
 	
 	</style>
 </head>
@@ -297,10 +282,14 @@
 		<p>CGPA: 8.00/10</p>
 	</section>
 	<div class="faded-line"></div>
-	<section class="internship" id="highlights">
-		<div class="internships">
+		
+	<section class="internship" id="internships">
+		<div class="headings">Internships</div>
+
+		
+		<div class="internship">
 			
-			<div class="sub-headings">1. Lohatec Precision Limited Private </div>
+			<div class="sub-headings">1. Lohatec Precision Private Limited  </div>
 			<p>
 			I completed a one-month internship in precision manufacturing and quality management.
 			I gained experience with 3-Axis and 5-Axis Vertical Milling Centers, a Turning Center, and a Vertical Machining Center.
@@ -309,7 +298,7 @@
 			including de-burring, cleaning, and maintaining documentation.</p>
 		</div>
 
-		<div class="internships">
+		<div class="internship">
 			
 			<div class="sub-headings">2. Elite Engineering Industries, Mangalore.</div>
 			<p>
@@ -319,21 +308,26 @@
 			</p>
 		</div>
 
-		<div class="internships">
+		<div class="internship">
 			
-			<div class="sub-headings">3. </div>
+			<div class="sub-headings">3. CAD Designing & ANSYS Analysis • Online Internship  </div>
 			<p>
-			
+			I completed training in 3D CAD modeling and finite element analysis (FEA) using ANSYS.
+				This training covered static, thermal, and stress analysis of mechanical components and assemblies. 
+				I also gained experience in CAD drafting, applying geometric dimensioning and tolerancing (GD&T), and developing simulation 
 				
 			</p>
 		</div>
 	</section>
+	
+	<div class="faded-line"></div>
+	
 	<section class="projects" id="projects">
 		<div class="headings">Projects</div>
-		<div class="sub-headings">1. Club Activity </div>
-		<div class="projectone">
+		
+		<div class="project">
 			<img src="images/rollcage.jpg" alt="first project">
-			<p><b><ins>Optimization of Roll Cage under Real-World Loads</b>
+			<p><b><ins>1. Roll Cage </b>
 			<br><br></ins>
 			Designed a 3D CAD model of an ATV roll cage meeting safety and racing standards.<br><br>
 			Ran structural and impact simulations to test load distribution and failure points.<br><br>
@@ -342,9 +336,8 @@
 			
 			
 		</div>
-		<div class="sub-headings">2. Club Activity </div>
-		<div class="projectwo">
-			<p><b><ins>Hydroponics</ins></b>
+		<div class="project">
+			<p><b><ins>2. Hydroponics</ins></b>
 			<br><br></ins>
 			Designed a 3D CAD model of a hydroponic setup aimed at efficient lettuce cultivation.<br><br>
 			Focused on nutrient flow, root support structures, and space optimization for small-scale farming.<br><br>
@@ -354,48 +347,30 @@
 			<img src="images/hydroponics.jpg">
 			
 		</div>
-		<div class="sub-headings">3. Internship </div>
-		<div class="projecthree">
-			
-			<p><b><ins>Lohatec Precision Private Limited</ins></b>
+		<div class="project">
+			<p><b><ins>3. Library Assistant Bot</ins></b>
 			<br><br></ins>
-			Completed a one-month internship focused on precision manufacturing and quality management systems.<br><br>
-			Worked with 3-Axis and 5-Axis Vertical Milling Centers, Turning Center, and Vertical Machining Center.<br><br>
-			Studied engineering drawings, GD&T parameters, materials, and machining feasibility.<br><br>
-			Applied measuring instruments (Vernier Caliper, Micrometer, Comparator, Toolmaker’s Microscope) for inspection.<br><br>
-			Learned AS9100 quality system practices, de-burring, cleaning of parts, and quality documentation.</p>
+			Designed the 3D CAD models for a Library Assistant Bot, supporting a final-year project by the Electrical & Electronics Department.<br><br>
+			Created the mechanical structure and housing components to integrate with the bot’s electrical systems.<br><br>
+			Contributed as part of an interdepartmental collaboration, applying mechanical design skills to an electronics-driven project.<br><br>
+			Gained experience in designing functional components that integrate with electronic systems.<br><br></p>
+		
+			<img src="images/robot.jpg">
+			
 		</div>
 		
-		<div class="sub-headings">4. Internship  </div>
-		
-		<div class="projecfour">
-			<p><b><ins>Elite Engineering Industries, Mangalore.</ins></b>
+		<div class="project">
+			<p><b><ins>4. Lock Box</ins></b>
 			<br><br></ins>
-			I completed a four-month internship (Jan–Apr 2024) as part of the Mechanical Engineering diploma curriculum. During this period, I studied engineering drawings, GD&T parameters, materials, and machining feasibility, while gaining exposure to manufacturing processes, quality control, and shop-floor operations. I also contributed to the fabrication of heat exchangers, agitator tanks, diesel storage tanks, and the repurposing of a gas tanker, which provided valuable insight into industrial practices and project execution.I completed a four-month internship from January to April 2024 as part of my Mechanical Engineering diploma program. During this time, I studied engineering drawings, GD&T parameters, materials, and machining feasibility. I also gained hands-on experience with manufacturing processes, quality control, and shop-floor operations.
-
-As part of my internship, I contributed to the fabrication of heat exchangers, agitator tanks, and diesel storage tanks, and participated in the repurposing of a gas tanker. This experience provided me with valuable insights into industrial practices and project execution.
-			
+			Designed the 3D CAD models for a Library Assistant Bot, supporting a final-year project by the Electrical & Electronics Department.<br><br>
+			Created the mechanical structure and housing components to integrate with the bot’s electrical systems.<br><br>
+			Contributed as part of an interdepartmental collaboration, applying mechanical design skills to an electronics-driven project.<br><br>
+			Gained experience in designing functional components that integrate with electronic systems.<br><br></p>
+		
+			<img src="images/lockbox.jpg">
 			
 		</div>
-
-		<div class="sub-headings">5. Online Internship  </div>
 		
-		<div class="projecfive">
-			<p><b><ins>CAD Designing & ANSYS Analysis </ins></b>
-			<br><br></ins>
-			Completed training in 3D CAD modelling and finite element analysis (FEA) using ANSYS. The work involved static, thermal, and stress analysis for mechanical components and assemblies, along with CAD drafting, GD&T applications, and simulation workflows. Strengthened design validation skills by evaluating feasibility and performance under real-world constraints.I completed training in 3D CAD modeling and finite element analysis (FEA) using ANSYS. This training covered static, thermal, and stress analysis of mechanical components and assemblies. I also gained experience in CAD drafting, applying geometric dimensioning and tolerancing (GD&T), and developing simulation workflows. </p>
-			
-			
-		</div>
-
-		<div class="sub-headings">5. Online Internship  </div>
-		<div class="projecfive">
-			<p><b><ins>CAD Designing & ANSYS Analysis </ins></b>
-			<br><br></ins>
-			Completed training in 3D CAD modelling and finite element analysis (FEA) using ANSYS.<br><br>
-			Practiced static, thermal, and stress analysis for mechanical components and assemblies.<br><br>
-			Worked with CAD drafting principles, GD&T applications, and simulation workflows.<br><br>
-			Strengthened design validation skills by analyzing feasibility and performance under real-world constraints.<br><br></p>
 		
 		
 	</section>
@@ -403,6 +378,7 @@ As part of my internship, I contributed to the fabrication of heat exchangers, a
 	
 </body>
 </html>
+
 
 
 
