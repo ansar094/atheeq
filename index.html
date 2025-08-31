@@ -169,8 +169,8 @@
 		width:28px;
 		height:28px;
 	}
+
 	.education{
-		background-color:#dcdcde;
 		font-family:Montserrat;
 		font-size:20px;
 		padding:60px;
@@ -178,7 +178,7 @@
 		font-weight:500;
 	}
 	.internships{
-		background-color:#ffffff;
+		background-color:#dcdcde;
 		font-family:Montserrat;
 		align-items:center;
 		font-size:20px;
@@ -191,14 +191,16 @@
 		align-items:top;
 		
 	}
-	.internship p{
+	.internship ul{
 		
 		margin-left:30px;
 		font-size:20px;
 		font-weight:500;
-	}		
+		margin-left:10px;
+	}
+
 	.projects{
-		background-color:#dcdcde;
+		background-color:#ffffff;
 		font-family:Montserrat;
 		align-items:center;
 		font-size:20px;
@@ -210,7 +212,6 @@
 		
 		max-width:600px;
 		width:100%;
-		border:2px solid #000;
 		border-radius:20px;
 		
 	}
@@ -223,8 +224,38 @@
 		
 		margin-left:30px;
 	}
-
-
+	.contacts{
+		background-color:#dcdcde;
+		padding: 60px 60px 0px 60px; 
+		display:flex;
+		justify-content: space-between;
+		align-items: center; 
+	}
+	.left-contact{
+		max-width:45%;
+		font-size:20px;
+		font-weight:500;
+	}
+	.right-contact{
+		max-width:40%;
+		font-size:20px;
+		font-weight:500;
+		
+	}
+	.contacts img{
+		width:30px;
+		height:auto;
+		
+	}
+	.copyright{
+		margin:0px;
+		background-color:#dcdcde;
+		padding:60px;
+		justify-content:center;
+		text-align: center;
+		
+	}
+		
 	
 	</style>
 </head>
@@ -279,7 +310,7 @@
 	<section class="education" id="education">
 		<div class="headings">Education</div>
 		<p><b>Bachelor of Engineering, Mechanical Engineering	(2024-2027)</b></p>
-		<P>St Joseph Engineering College</p>
+		<p>St Joseph Engineering College</p>
 		<br>
 		<p><b>Diploma, Mechanical Engineering	(2021-2024)</b></p>
 		<p>Karnataka (Govt.) Polytechnic</p>
@@ -295,33 +326,31 @@
 		<div class="internship">
 			
 			<div class="sub-headings">1. Lohatec Precision Private Limited  </div>
-			<p>
-			I completed a one-month internship in precision manufacturing and quality management.
-			I gained experience with 3-Axis and 5-Axis Vertical Milling Centers, a Turning Center, and a Vertical Machining Center.
-			The internship included studying engineering drawings, GD&T parameters, and machining feasibility.
-			I used measuring tools like Vernier Calipers and Micrometers for inspections and learned about quality system practices,
-			including de-burring, cleaning, and maintaining documentation.</p>
+			<ul><p>
+			<li>Completed a one-month internship in precision manufacturing.</li><br>
+			<li>Operated 3-Axis and 5-Axis Milling Centers, Turning Center, and Vertical Machining Center.</li><br>
+			<li>Studied engineering drawings, GD&T, and machining feasibility.</li><br>
+			<li>Used measurement tools and learned quality practices like de-burring and documentation.</li><br></p></ul>
 		</div>
 
 		<div class="internship">
 			
 			<div class="sub-headings">2. Elite Engineering Industries, Mangalore.</div>
-			<p>
-			I completed a four-month internship (Jan–Apr 2024) as part of the Mechanical Engineering diploma curriculum.
-				During this period, I studied engineering drawings, GD&T parameters, materials, and machining feasibility, while gaining exposure to manufacturing processes, quality control, and shop-floor operations.
-				I also contributed to the fabrication of heat exchangers, agitator tanks, diesel storage tanks, and the repurposing of a gas tanker, which provided valuable insight into industrial practices and project execution.
-			</p>
+			<ul><p>
+			<li>Completed a four-month internship in mechanical engineering (Jan–Apr 2024).</li><br>
+			<li>Studied engineering drawings, GD&T, materials, and machining feasibility.</li><br>
+			<li>Gained exposure to manufacturing processes, quality control, and shop-floor operations.</li><br>
+			<li>Assisted in fabrication of heat exchangers, agitator tanks, diesel storage tanks, and repurposing a gas tanker.</li><br></p></ul>
+			
 		</div>
 
 		<div class="internship">
 			
 			<div class="sub-headings">3. CAD Designing & ANSYS Analysis • Online Internship  </div>
-			<p>
-			I completed training in 3D CAD modeling and finite element analysis (FEA) using ANSYS.
-				This training covered static, thermal, and stress analysis of mechanical components and assemblies. 
-				I also gained experience in CAD drafting, applying geometric dimensioning and tolerancing (GD&T), and developing simulation for design validation.
-				
-			</p>
+			<ul>
+			<li>Completed training in 3D CAD modeling and FEA using ANSYS.</li><br>
+			<li>Performed static, thermal, and stress analysis of mechanical components and assemblies.</li><br>
+			<li>Gained experience in CAD drafting, GD&T, and simulation for design validation.</li><br></ul>
 		</div>
 	</section>
 	
@@ -336,12 +365,12 @@
 			<br><br>
 			Designed a 3D CAD model of an ATV roll cage meeting safety and racing standards.<br><br>
 			Ran structural and impact simulations to test load distribution and failure points.<br><br>
-			Refined the design for strength, weight reduction, and manufacturing feasibility.<br><br></p>
-			<img src="images/rollcage.jpg" alt="first project" alt="3d model of a roll cage">
+			Refined the design for strength, weight reduction, and manufacturing feasibility.</p>
+			<img src="images/rollcage.jpg" alt="3d model of a roll cage" style="margin-top:-80px;">
 		</div>
 		<div class="faded-line"></div>
 		<div class="project">
-			<img src="images/hydroponics.jpg" alt="3d model of a hydroponic setup">
+			<img src="images/hydroponics.jpg" alt="3d model of a hydroponic setup" style="margin-top:-30px;">
 			<p><b><ins>2. Hydroponics</ins></b>
 			<br><br>
 			Designed a 3D CAD model of a hydroponic setup aimed at efficient lettuce cultivation.<br><br>
@@ -385,7 +414,7 @@
 			Proposed a controlled, cleaner, and more efficient drying process to improve seafood quality and safety.<br><br>
 			Collaborated with a team to prototype the concept and pitch it as a scalable coastal solution.<br><br></p>
 		
-			<img src="images/fishdryer.jpg" alt="3d model of a fish drying machine">
+			<img src="images/fishdryer.jpg" alt="3d model of a fish drying machine" style="margin-top:-20px;">
 			
 		</div>
 		
@@ -394,16 +423,55 @@
 	<section class="contacts" id="contacts">
 		<div class="left-contact">
 			
+			<p>Reach out anytime- I’m always open to new ideas!</p>
 		
 		</div>
 		
 		<div class="right-contact">
-			
+			<p>Socials</p>
+			<a href="https://linkedin.com/in/muhammadatheeqb" target="_blank"><img src="images/linkedin.svg" alt="icon of linkedin"></a>
+			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=atheeqbaithadka5@gmail.com" target="_blank"><img src="images/gmail.svg" alt="icon of gmail"></a>
+			<a href="https://wa.me/919483941938?text=Hello,%0A" target="_blank"><img src="images/whatsapp.svg" alt="icon of whatsapp"></a>
 		</div>
+				
 	</section>
+	
+	<div class="copyright">
+	<hr>
+	<p>© 2025 Muhammad Atheeq B. All rights reserved.</p>
+
+	</div>
+	
+	
 	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
